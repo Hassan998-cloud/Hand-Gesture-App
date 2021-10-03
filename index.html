@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>HAND GESTURE WEB APP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+    
+
+      <body>
+        <div class="container">
+        
+          <center>
+            <h3 class = "btn btn-warning heading">HAND GESTURE WEB APP
+              <br>
+              <span>&#128076;</span>
+              <span>&#128077;</span>
+              <span>&#9996;</span>
+            </h3>
+      
+            <br><br>
+      
+            <p style="font-size: 22px;">Take your selfie to generate hand sign
+              <br>
+              <b style="color: yellow">That looks amazing</b>
+              <br>
+              <b style="color: black">Wish you the Best</b>
+              <br>
+              <b style="color: red">What a wonderful Victory</b>
+              <br>
+            </p>
+       
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Webcam view - </label>
+          <div id="camera"></div>
+          <br><br>
+          <button onclick="take_snapshot()" class= "btn btn-success" >CAPTURE IMAGE</button>
+        </div>
+      
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Prediction 1 - </label>
+          <p id="answer1" class="handgesture_name"></p>
+          <p class="handgesture" id="updated_handgesture"></p>
+        
+      
+       
+          <label>Prediction 2 - </label>
+          <p id="answer2" class="emotion_name"></p>
+          <p class="handgesture" id="updated_handgesture2"></p>
+        </div>
+      
+       
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <label>Snapshot - </label>
+              <div id="result"></div>
+              <br><br>
+              <button onclick="handgesture_result()" class="btn btn-success">PREDICT HAND GESTURE</button>
+            </div>
+      
+          </center>
+      
+        </div>
+      
+      <script src="main.js"></script>
+      
+        </body>
+      </html>
+</html>
